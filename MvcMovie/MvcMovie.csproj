@@ -133,6 +133,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202408030343415_Initial.cs" />
+    <Compile Include="Migrations\202408030343415_Initial.Designer.cs">
+      <DependentUpon>202408030343415_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408030407161_Rating.cs" />
+    <Compile Include="Migrations\202408030407161_Rating.Designer.cs">
+      <DependentUpon>202408030407161_Rating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -224,6 +233,14 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202408030343415_Initial.resx">
+      <DependentUpon>202408030343415_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408030407161_Rating.resx">
+      <DependentUpon>202408030407161_Rating.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
